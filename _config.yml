@@ -1,0 +1,24 @@
+title: E. Tyler Carr
+email: carret1268@gmail.com
+
+description: >- 
+  Physics simulations, software engineering projects, and technical writeups
+  covering scientific computing, data pipelines, and visualization.
+
+baseurl: "" 
+url: "https://carret1268.github.io"
+
+github_username: carret1268
+
+# Build settings
+theme: minima
+minima:
+  skin: dark
+
+timezone: America/New_York
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+

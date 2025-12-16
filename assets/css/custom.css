@@ -1,0 +1,174 @@
+/* Fonts */
+
+@font-face {
+  font-family: "FiraCode Nerd Font Mono";
+  src: url("/assets/fonts/FiraMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraCode Nerd Font Mono";
+  src: url("/assets/fonts/FiraMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraCode Nerd Font Mono";
+  src: url("/assets/fonts/FiraMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global theme */
+
+html,
+body {
+  background: #111;
+  color: #eee;
+  font-size: 1.1rem;
+}
+
+a { color: #9ecbff; }
+a:visited { color: #d0b3ff; }
+
+.site-header,
+.site-footer,
+header,
+footer {
+  background: #111;
+  border-color: #333;
+}
+
+/* Main content container */
+.post-content,
+.page-content {
+  border: 1px solid #2a2a2a;
+  padding: 2rem;
+  border-radius: 6px;
+  background: #111;
+}
+
+.post-content,
+.page-content,
+main {
+  background: transparent;
+}
+
+@media (min-width: 1400px) {
+  .wrapper { max-width: 1150px; }
+}
+
+/* Images */
+.post-content img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+code {
+  font-family: "FiraCode Nerd Font Mono", "JetBrains Mono", "Cascadia Code",
+               "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+}
+
+/* Inline code (not Rouge blocks) */
+p code,
+li code {
+  background: #1b1b1b;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.08em 0.3em;
+}
+
+/* Generic pre (non-Rouge blocks, if any exist) */
+pre {
+  background: #1b1b1b;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+/* Tables */
+
+main table,
+.page-content table,
+.post-content table,
+.wrapper table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 1.5rem 0 !important;
+  color: whitesmoke;
+}
+
+main table thead th,
+main table th {
+  font-weight: 700 !important;
+  text-align: center !important;
+  padding: 0.6rem 0.8rem !important;
+  background: #1a1a1a !important;
+  border-bottom: 2px solid #333 !important;
+}
+
+main table td {
+  padding: 0.6rem 0.8rem !important;
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+main table tbody tr:nth-child(even) {
+  background: #1e1e1e !important;
+}
+
+main table tbody tr:hover {
+  background: #262626 !important;
+}
+
+/* MathJax SVG sizing */
+
+mjx-container[jax="SVG"][display="true"] {
+  font-size: 120%;
+}
+
+mjx-container[jax="SVG"]:not([display="true"]) {
+  font-size: 105%;
+}
+
+mjx-container[jax="SVG"] svg a use {
+  fill: #4fc1ff !important;
+}
+
+mjx-container[jax="SVG"] svg a:hover use {
+  fill: #9cdcfe !important;
+}
+
+/* Headings: auto divider lines */
+
+h2::after {
+  content: "";
+  display: block;
+  border-top: 2px solid #444;
+  margin-top: 0.6rem;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #444;
+  margin-top: 0.4rem;
+}
+
+a:hover {
+  color: #b2e4ff;
+}
+
+video {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}

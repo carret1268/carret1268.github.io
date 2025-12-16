@@ -1,0 +1,107 @@
+code,
+pre,
+pre code {
+  font-family: "FiraCode Nerd Font Mono", "JetBrains Mono", "Cascadia Code",
+               "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+  font-variant-ligatures: contextual;
+}
+
+code {
+  font-size: 0.95em;
+}
+
+.highlighter-rouge .highlight {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.highlighter-rouge .highlight pre {
+  margin: 0;
+  padding: 0.75rem;
+  background: transparent;
+  overflow-x: auto;
+}
+
+.highlighter-rouge .highlight code {
+  background: transparent;
+  color: #d4d4d4; /* base foreground for unclassified tokens */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Comments */
+.highlighter-rouge .highlight .c,
+.highlighter-rouge .highlight .c1,
+.highlighter-rouge .highlight .cm {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Keywords */
+.highlighter-rouge .highlight .k,
+.highlighter-rouge .highlight .kd,
+.highlighter-rouge .highlight .kn,
+.highlighter-rouge .highlight .kp,
+.highlighter-rouge .highlight .kr {
+  color: #c586c0;
+}
+
+/* Constants / builtins pseudo-constants (None/True/False, self, etc. depend on lexer) */
+.highlighter-rouge .highlight .kc,
+.highlighter-rouge .highlight .bp {
+  color: #569cd6;
+  font-weight: 400;
+}
+
+/* Operators / punctuation */
+.highlighter-rouge .highlight .o,
+.highlighter-rouge .highlight .ow {
+  color: #d4d4d4;
+}
+
+/* Function names */
+.highlighter-rouge .highlight .nf {
+  color: #dcdcaa;
+}
+
+/* Class names */
+.highlighter-rouge .highlight .nc {
+  color: #4ec9b0;
+  font-weight: 700;
+}
+
+/* Modules / namespaces */
+.highlighter-rouge .highlight .nn,
+.highlighter-rouge .highlight .nx {
+  color: #9cdcfe;
+}
+
+/* Builtins (len, range, etc.) */
+.highlighter-rouge .highlight .nb {
+  color: #4fc1ff;
+}
+
+/* Numbers */
+.highlighter-rouge .highlight .mi,
+.highlighter-rouge .highlight .mf {
+  color: #b5cea8;
+}
+
+/* Strings */
+.highlighter-rouge .highlight .s,
+.highlighter-rouge .highlight .s1,
+.highlighter-rouge .highlight .s2,
+.highlighter-rouge .highlight .sa {
+  color: #ce9178;
+}
+
+/* String interpolation segments */
+.highlighter-rouge .highlight .si {
+  color: #d4d4d4;
+}
+
+/* Identifiers (generic names) */
+.highlighter-rouge .highlight .n {
+  color: #9cdcfe;
+}
