@@ -1,8 +1,5 @@
-<nav>
-  <a href="/">Home</a>
-  <a href="/physics/">Physics</a>
-  <a href="/mathematics/">Mathematics</a>
-  <a href="/data-analysis/">Data Analysis</a>
-  <a href="/python-projects/">Python Projects</a>
-  <a href="/about/">About</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <span class="site-title">E. Tyler Carr</span>
+  <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+  <a href="/physics/" {% if page.url contains "/physics" %}class="active"{% endif %}>Physics</a>
 </nav>

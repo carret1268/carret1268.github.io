@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Simple Pendulum"
-categories: [physics, classical-mechanics, numerical-methods]
-tags: [pendulum, simple-harmonic-motion, differential-equations, rk4, phase-space, energy-conservation, elliptic-integrals, simulation, python, matplotlib]
+categories: [physics, pendulums]
+tags: [classical-mechanics, numerical-methods, rk4, phase-space, elliptic-integrals, simulation, python]
 ---
 
 ## Introduction

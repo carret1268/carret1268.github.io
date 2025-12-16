@@ -172,3 +172,77 @@ video {
   margin: 1.5rem auto;
   max-width: 100%;
 }
+
+/* ---------- Navbar ---------- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 1.0rem;
+
+  padding: 0rem 1.0rem;
+
+  background: rgba(11, 25, 32, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Links */
+.site-nav a {
+  position: relative;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #cbd5e1; /* slate-300 */
+
+  padding: 0.1rem 0;
+  transition: color 0.2s ease;
+}
+
+/* Hover state */
+.site-nav a:hover {
+  color: #ffffff;
+}
+
+/* Subtle underline animation */
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 0;
+  height: 2px;
+  background: #4fc1ff;
+
+  transition: width 0.25s ease;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+.site-nav a.active {
+  color: #ffffff;
+}
+
+.site-nav a.active::after {
+  width: 100%;
+}
+
+.site-title {
+  margin-right: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
